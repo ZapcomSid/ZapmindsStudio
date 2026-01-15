@@ -23,13 +23,15 @@ export function Hero({ theme, onToggleTheme }: HeroProps) {
   return (
     // <div className="min-h-screen  flex items-center justify-center p-4 sm:p-6 md:p-10">
     // <div className="relative w-full max-w-[2400px] h-[90vh] rounded-2xl overflow-hidden shadow-xl bg-black">
+    // <div className="relative min-h-screen flex items-center overflow-hidden">
     <div className="relative min-h-screen flex items-center overflow-hidden">
+     {/* <div className="relative min-h-[100svh] flex items-start lg:items-center overflow-hidden"> */}
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1758691736843-90f58dce465e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMG9mZmljZSUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3Njc1OTQzODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Team collaboration"
-          className="w-full h-full object-cover grayscale"
+          className="absolute inset-0 w-full h-full object-cover object-center grayscale"
         />
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
