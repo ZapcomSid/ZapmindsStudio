@@ -165,7 +165,7 @@ export function Preloader({ onComplete }: PreloaderProps) {
               className="mb-8"
             >
               <motion.img
-                src="/logo.svg" 
+                src="/zapcom..png" 
                 alt="Zapminds"
                 className="h-16 sm:h-20 md:h-24 object-contain"
                 animate={{
