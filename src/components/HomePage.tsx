@@ -6,6 +6,8 @@ import { Testimonials } from "./Testimonials";
 import { ContactUs } from "./ContactUs";
 // import { ThemeToggle } from "./ThemeToggle";
 import { Footer } from "./Footer";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 interface HomePageProps {
   theme: "light" | "dark";
@@ -13,6 +15,17 @@ interface HomePageProps {
 }
 
 export function HomePage({ theme, onToggleTheme }: HomePageProps) {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const el = document.getElementById(location.state.scrollTo);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+  
   return (
     <div
       className={`min-h-screen transition-colors duration-500 ${
